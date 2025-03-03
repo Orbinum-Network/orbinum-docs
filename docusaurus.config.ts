@@ -13,7 +13,6 @@ const config: Config = {
   organizationName: 'Orbinum-Network',
   projectName: 'orbinum-docs',
   trailingSlash: false,
-  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
