@@ -13,6 +13,7 @@ const config: Config = {
   organizationName: 'Orbinum-Network',
   projectName: 'orbinum-docs',
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,7 +31,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://docs.orbinum.net',
+            'https://github.com/Orbinum-Network/orbinum-docs',
         },
         blog: false,
         theme: {
