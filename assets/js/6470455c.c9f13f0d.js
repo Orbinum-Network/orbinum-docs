@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[633],{349:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Quick Start","slug":"/","permalink":"/orbinum-docs/","sidebar":"tutorialSidebar","navigation":{"next":{"title":"What is Orbinum?","permalink":"/orbinum-docs/quick_start/orbinum"}}}}')}}]);
