@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://docs.orbinum.net',
-  baseUrl: '/',
+  baseUrl: '/orbinum-docs',
 
   organizationName: 'Orbinum-Network',
   projectName: 'orbinum-docs',
