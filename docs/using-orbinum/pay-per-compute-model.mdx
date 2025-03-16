@@ -1,7 +1,33 @@
 ---
 sidebar_position: 2
 ---
-import ComingSoon from '../../src/components/comingsoon.mdx';
+# Pay-per-Compute Model
 
-# Pay-Per-Compute Model
-<ComingSoon />
+The Orbinum Network implements a sophisticated **Pay-per-Compute** model, representing a fundamental pillar of its decentralized AI ecosystem. This framework addresses the inherent limitations of traditional, centralized computational infrastructure by establishing a distributed marketplace where users can access heterogeneous processing power on demand, paying granularly for the resources consumed. This approach democratizes access to the computationally intensive tasks associated with advanced AI development and deployment.
+
+## Architectural Overview of the Compute Marketplace
+
+The Pay-per-Compute system operates through a multi-layered architectural design:
+
+1.  **Compute Resource Solicitation:** Users initiating AI-related workloads, such as model training, inference execution, or large-scale data processing, formulate specific compute requests. These requests articulate precise hardware prerequisites (CPU cores, GPU specifications, memory allocation), anticipated task duration, and potentially performance benchmarks.
+2.  **Intelligent Resource Orchestration:** The Orbinum Network's underlying infrastructure, leveraging the principles of distributed model sharding and a dedicated resource management layer, undertakes an intelligent matching process. This mechanism identifies and allocates available computational resources offered by participating **Contributors** (who primarily provide general-purpose compute) and potentially **Validators** (who may provision surplus resources).
+3.  **Secure and Distributed Task Execution:** Upon successful resource allocation and user confirmation of the associated ON token cost, the designated computational task is securely distributed and executed in parallel across the contributing network nodes. The inherent capabilities of the distributed model sharding framework facilitate the efficient decomposition and concurrent processing of complex AI workloads, optimizing overall execution time and resource utilization.
+4.  **Transparent Payment and Multi-Party Distribution:** Upon verifiable completion of the computational task, as attested by the network's consensus mechanisms, the user initiates the pre-agreed payment in ON tokens. This payment undergoes a structured distribution process:
+    * A designated fraction of the payment is automatically allocated to cover the requisite **blockchain transaction fees**. These fees are essential for the immutable recording of service utilization and the transparent distribution of compensation to participating nodes.
+    * The remaining principal of the payment is then algorithmically and transparently distributed among the participants that contributed their computational resources to the specific task. The distribution algorithm accounts for factors such as the quantum of compute provided (e.g., processing time, number of cores/GPUs utilized) and the duration of their resource commitment to the task.
+
+## Core Advantages of the Decentralized Compute Paradigm
+
+The Pay-per-Compute model inherent to the Orbinum Network offers several key advantages over conventional centralized solutions:
+
+* **Enhanced Accessibility:** By aggregating a diverse pool of distributed resources, the network significantly broadens access to substantial computational power, eliminating barriers for individuals, research entities, and smaller organizations that may lack the capital for dedicated infrastructure.
+* **Optimized Cost Efficiency:** The pay-as-you-go model ensures that users incur costs directly proportional to their actual computational consumption, leading to more efficient resource allocation and potentially lower overall expenditure compared to fixed-capacity or subscription-based centralized services.
+* **Dynamic Scalability:** The inherently distributed architecture of the network enables elastic scaling of computational resources to accommodate fluctuating and unpredictable workload demands, providing greater agility and responsiveness.
+* **Direct Participant Incentivization:** The Pay-per-Compute mechanism furnishes a direct and tangible economic incentive, denominated in ON tokens, for **Contributors** and **Validators** to actively contribute their otherwise idle hardware resources to the network. This fosters a self-sustaining and robust supply of computational capacity.
+* **Reinforced Decentralization:** By establishing a decentralized marketplace for compute, Orbinum mitigates the reliance on a limited number of dominant centralized cloud providers, thereby bolstering the network's resilience, censorship resistance, and alignment with its core principles of decentralization and democratized access to AI infrastructure.
+
+---
+
+The ON token serves as the exclusive medium of exchange within the Pay-per-Compute ecosystem. Users procure computational resources by expending ON tokens, while network participants contributing their compute capacity are directly compensated in ON. This inherent utility within a core network function underpins the fundamental value proposition and drives demand for the ON token within the Orbinum Network.
+
+The Pay-per-Compute model represents a strategic and technically robust component of the Orbinum Network. By establishing a decentralized and economically incentivized marketplace for computational resources, Orbinum empowers a broader spectrum of users to engage with advanced AI workloads while directly rewarding those who contribute to the network's processing capabilities. This synergistic relationship is crucial for fostering a vibrant and sustainable decentralized AI ecosystem.
