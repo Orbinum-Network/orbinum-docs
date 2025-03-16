@@ -1,0 +1,88 @@
+---
+sidebar_position: 5
+---
+
+# Participants
+
+Orbinum’s decentralized ecosystem relies on a network of participants with distinct technical roles: **Validators**, who are the core guardians of the network's integrity and operational efficiency, operating Substrate-based nodes and playing a key role in AI model operations; **Nominators**, who enhance network security by supporting trusted validators with their staked tokens; and **Contributors**, who provide heterogeneous computational resources orchestrated through a distributed model sharding framework to support various AI tasks.
+
+---
+
+## Technical Significance of Participants
+
+| Participant Type | Key Technical Role                                                                 | Significance to Orbinum                                                                                                                                                                                                                                                                                                                         |
+| :--------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| **Validators** | Secure network (NPoS consensus), validate transactions, verify AI computations, train/create/rebuild/fragment AI models | Ensure data integrity, network stability, and the correctness of AI model processing. Participate in block production and finality. Actively involved in the lifecycle of AI models. |
+| **Nominators** | Delegate stake to validators                                                       | Enhance network security by increasing the stake behind reliable validators, making the network more resistant to attacks. Earn passive rewards. Participate in governance.                                                                                                                                                                       |
+| **Contributors** | Provide computational resources (CPU/GPU) to support AI model operations | Enable the distributed execution of AI tasks through the model sharding framework, democratizing access to computational power for AI. Crucial for the computational demands of AI model training, creation, rebuilding, and fragmentation. |
+
+---
+
+## Technical Architecture of Participants
+
+| Participant Type | Underlying Technology | Key Software/Protocols |
+| :--------------- | :-------------------- | :------------------------------------------------------------------------------------- |
+| **Validators** | Substrate Framework | Substrate Node Client (GRANDPA, BABE), P2P Networking Protocols, Orbinum Runtime Logic, Distributed Model Sharding Framework |
+| **Nominators** | Orbinum Blockchain | Compatible Wallet Application, On-chain Staking/Nomination Transactions |
+| **Contributors** | Orbinum Network | Contributor Client Software, Distributed Model Sharding Framework Interface, Off-chain Data Transfer (potentially) |
+
+---
+
+## Validators: Guardians and AI Operators of the Orbinum Network
+
+Validators in the Orbinum Network are the core guardians of its integrity and operational efficiency. Orbinum's model embraces a flexible structure where nodes contribute based on their available computational capabilities and their level of stake commitment. Validators not only secure the network but also play a pivotal role in the AI ecosystem by training, creating, rebuilding, and fragmenting AI models.
+
+To become a Validator, a node must satisfy certain minimum computational resource thresholds, including significant compute capabilities for AI tasks, and commit an initial stake as collateral. This stake serves as a crucial economic incentive for Validators to act honestly and in accordance with network rules.
+
+A comprehensive reputation system governs Validator performance, evaluating their reliability and overall contributions, including their success in AI model operations. Factors such as network uptime, the success rate of completed tasks (including AI tasks), and general participation metrics contribute to a Validator's reputation score. A higher reputation translates to greater rewards and a preference in task assignment, while a declining reputation can lead to penalties, including the withholding or slashing of rewards, or even removal from active participation in the network.
+
+To maintain the integrity of the consensus process and AI operations, penalties are enforced for Validators who fail to meet the network's standards. Minor infractions may result in a temporary reduction of rewards, whereas repeated failures can lead to a portion of their stake being slashed. More severe malicious actions, such as double-signing transactions or producing invalid blocks or faulty AI models, carry significant penalties, potentially including the complete forfeiture of their staked assets. These forfeited funds are then redistributed to honest network participants and through governance mechanisms, further incentivizing good behavior.
+
+All Validators actively participate in both the Nominated Proof of Stake (NPoS) consensus mechanism, which underpins the security of the blockchain, and the Proof of Contribution (PoC) model, which rewards nodes based on their valuable contributions to the network, encompassing both computational resources and network participation, especially in AI model-related activities.
+
+Validators dynamically adapt their roles based on the real-time demands of the network and their available computational power. These roles include:
+
+* **AI Model Storage and Validation:** Ensuring the integrity and accessibility of AI model shards through robust cryptographic validation techniques.
+* **AI Model Training and Execution:** Utilizing their computational resources to facilitate distributed AI model training processes and inference tasks.
+* **General Blockchain Maintenance:** Validating transactions, ensuring data consistency across the network, and actively supporting decentralized governance initiatives.
+* **Computational Resource Provisioning:** Offering their GPU and CPU resources under the pay-per-compute model, catering to users requiring on-demand processing power for AI and data-intensive tasks.
+
+This dynamic allocation of responsibilities ensures that Validators remain adaptable to the evolving needs of the Orbinum ecosystem, maximizing efficiency and reward opportunities while reinforcing the network's decentralized AI-driven nature.
+
+---
+
+## Nominators: Supporting Network Security
+
+Nominators play a crucial role in the security and decentralization of Orbinum. They do not directly validate transactions or perform AI operations but instead contribute by supporting reliable validators with their staked tokens.
+
+Nominators use a compatible wallet application to interact with the Orbinum blockchain and submit a "nominate" transaction, specifying the validators they wish to support. This delegation increases the stake behind reputable validators, making the network more resistant to attacks.
+
+Nominators automatically receive a portion of the rewards earned by their chosen validators, proportional to their delegated stake. The network protocol handles the distribution of rewards.
+
+Nominators also participate in on-chain governance by casting votes on proposals using their staked tokens or the voting power delegated to them by the protocol.
+
+Nominators need to monitor the performance and reputation of their chosen validators by tracking metrics such as uptime, success in AI tasks, and reported incidents. This often involves using blockchain explorers or monitoring tools.
+
+There are risks involved, such as the slashing of delegated stake if a nominated validator engages in misbehavior or performs poorly in AI operations. To optimize rewards and mitigate risks, nominators may need to actively manage their nominations, potentially switching to different validators based on their performance and reputation.
+
+---
+
+## Contributors: Providing Computational Power for AI
+
+Contributors provide the computational muscle necessary for the Orbinum Network to execute AI-related tasks, supporting the Validators in their AI model operations.
+
+Contributors utilize specialized Contributor client software to register their available computational resources (CPU, GPU, memory) with the Orbinum Network's resource management system. This registration process might involve specifying hardware capabilities and network connectivity.
+
+The Contributor client software communicates with the distributed model sharding framework to discover and acquire AI computation tasks assigned by the network (often initiated by Validators). These tasks can include training specific shards of a model, performing inference, or assisting in other AI model operations.
+
+Contributors execute the assigned AI computation tasks using their local hardware resources. This involves running specific software and libraries as required by the task.
+
+Upon completion of a task, the Contributor client software reports the results back to the network, along with cryptographic proofs (if required) to demonstrate the integrity of the computation.
+
+Contributors must possess compatible hardware resources, such as CPUs or GPUs meeting minimum performance specifications for AI computations. The Contributor client software will handle communication with the network, task acquisition, and result reporting. Contributors must also maintain a stable internet connection.
+
+Future versions might include requirements for secure enclaves or other technologies to enhance the trustworthiness of computations, and detailed reward mechanisms based on resource contribution and task completion.
+
+---
+
+By ensuring **robust network integrity through secure consensus and enabling decentralized AI operations through the collaborative efforts of validators (managing AI models) and contributors (providing compute)**, alongside the security provided by nominators and the governance of all participants, Orbinum’s decentralized AI ecosystem can thrive.

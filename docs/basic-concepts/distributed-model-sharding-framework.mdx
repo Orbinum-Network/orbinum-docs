@@ -1,0 +1,155 @@
+---
+sidebar_position: 3
+---
+# Distributed Model Sharding Framework
+
+The **Distributed Model Sharding Framework (DMSF)** framework enables Orbinum to efficiently manage AI models through **on-chain fragmentation, training, storage, validation, and execution**. This system ensures **decentralization, scalability, and security**, preventing any single entity from controlling the AI model lifecycle.  
+
+DMS is fundamental to Orbinum’s **fault-tolerant, high-availability AI infrastructure**, leveraging validator nodes to store and reconstruct models in a **distributed and verifiable manner**.  
+
+---
+
+## How DMSF Works in Orbinum
+
+DMS follows a structured process to manage AI models securely and efficiently:  
+
+### 🔹 1. Model Registration & Indexing
+
+When a new AI model is submitted:
+
+- A **unique `model_id`** is assigned.
+- The model **metadata is stored immutably** on the blockchain.
+- A **validation index** tracks the model’s lifecycle.
+
+*This ensures that every AI model in Orbinum is verifiable and securely recorded.* 
+
+```json
+{
+  "type": "register_model",
+  "model_id": "ai_model_XYZ",
+  "owner": "user_123",
+  "validation_status": "pending",
+  "timestamp": "2025-03-05T12:00:00Z"
+}
+```
+
+ ### 🔹 2. Federated Learning & Local Model Training
+
+Instead of training models centrally, Orbinum uses federated learning to distribute training across multiple decentralized nodes:
+
+- Nodes train AI models using their local datasets.
+- Raw data is never shared, ensuring privacy and compliance with security principles.
+- Each model remains localized and fragmented within its respective nod
+
+```json
+{
+    "type": "local_model_training",
+    "node_id": "neural_node_001",
+    "model_id": "ai_model_local_xyz",
+    "dataset_location": "/path/to/local/dataset",
+    "algorithm": "FederatedAveraging",
+    "parameters": {
+        "epochs": 10,
+        "batch_size": 32,
+        "learning_rate": 0.001
+    },
+    "timestamp": "2024-07-20T10:00:00Z"
+}
+```
+
+### 🔹 3. Model Fragmentation & Blockchain Storage
+
+Once trained, models are split into optimized shards for decentralized storage using DMS:
+
+- Each shard is encoded, hashed, and stored on-chain.
+- Cryptographic proofs prevent tampering or unauthorized modifications.
+- Shards are linked to their `model_id` for future reconstruction.
+
+```json
+{
+  "type": "store_model_shard",
+  "shard_id": "shard_123",
+  "model_id": "ai_model_XYZ",
+  "data": "base64_encoded_shard_data",
+  "hash": "abc123def456",
+  "timestamp": "2025-03-05T12:00:00Z"
+}
+```
+
+### 🔹 4. Shard Validation & Auditing
+
+To maintain data integrity, the validator:
+
+- Recalculates and compares shard hashes to detect inconsistencies.
+- Automatically rejects or revalidates altered or corrupted shards.
+- Ensures that only verified shards remain available for reconstruction.
+
+*This prevents unauthorized modifications and guarantees the authenticity of AI models.*
+
+```json
+{
+  "type": "validate_shard",
+  "shard_id": "shard_123",
+  "validator_node": "node_45B",
+  "status": "approved",
+  "timestamp": "2025-03-05T12:30:00Z"
+}
+```
+
+### 🔹 5. Decentralized Model Execution
+
+When a model needs to be executed:
+
+- The validator retrieves, reconstructs the model from its shards, and verifies its integrity.
+- The AI model is distributed across nodes for execution.
+- Parallel processing optimizes execution speed while ensuring correctness.
+- Final results are securely returned to the requesting user.
+
+*This ensures models can be executed efficiently in a decentralized way.*
+
+```json
+{
+  "type": "execute_model",
+  "model_id": "ai_model_XYZ",
+  "execution_nodes": ["exec_1A", "exec_2B", "exec_3C"],
+  "status": "completed",
+  "timestamp": "2025-03-05T13:00:00Z"
+}
+```
+
+---
+
+## DMSF Flowchart
+
+<img src="/img/dms.png" alt="Distributed Model Sharding Framework" width={500} style={{ display: 'block', margin: '0 auto' }} />
+
+---
+
+## **Privacy and Security Mechanisms**  
+
+To maintain the integrity of AI models while ensuring privacy, Orbinum implements the following security measures:  
+
+- Zero-Knowledge Proofs (ZKP) → Allow model verification without revealing training data or updates. Ensure that contributions are valid while preserving privacy.  
+- Homomorphic Encryption → Enables AI computations to occur directly on encrypted data, ensuring privacy at all stages of training and execution.  
+- Differential Privacy → Introduces mathematical noise into model updates to prevent identity tracing or dataset reconstruction attacks.  
+- Model Integrity Validation → Each model update is validated before being stored to prevent low-quality or biased updates. Any invalid or tampered updates are automatically rejected or require revalidation.  
+
+---
+
+## Fault-Tolerant & Decentralized Model Management
+DMS integrates redundancy and fault-tolerance mechanisms to ensure AI model availability:
+
+- Automatic Failover → If a validator node goes offline, another node takes over shard verification and execution.
+- Reallocation of Computation Tasks → Failed AI executions trigger automatic reassignment of tasks.
+- Slashing Mechanisms → Nodes that repeatedly fail or attempt to tamper with stored models face penalties and removal.
+
+*These safeguards guarantee that AI models remain accessible, verifiable, and resistant to failures.*
+
+---
+
+## **Why Orbinum’s Federated Learning is Unique**  
+
+- No centralized AI model → Each model remains fragmented and decentralized.  
+- Stronger security → Cryptographic validation ensures integrity of model updates.  
+- Optimized AI execution → Sharded models allow scalable and parallel computing.  
+- Fully private AI training → Raw data never leaves the owner’s node.  

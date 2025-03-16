@@ -1,0 +1,69 @@
+---
+sidebar_position: 2
+---
+
+# Hybrid Consensus
+
+Orbinum employs a **Hybrid Consensus Mechanism**, integrating **Nominated Proof of Stake (NPoS)** and **Proof of Contribution (PoC)** to ensure network security, scalability, and fair incentivization. This approach balances stake-based security with merit-based rewards, fostering an ecosystem where both validators and contributors play crucial roles in maintaining and advancing the network.
+
+---
+
+## **How Hybrid Consensus Works**
+
+The Hybrid Consensus model operates through two complementary mechanisms: **Nominated Proof of Stake (NPoS)** and **Proof of Contribution (PoC)**. Each of these mechanisms addresses different aspects of network operations, ensuring a decentralized and fair system where participation is both secure and rewarding.
+
+### **1. Nominated Proof of Stake (NPoS) – Security & Governance**
+
+**NPoS** is responsible for securing the Orbinum blockchain by electing validators who verify transactions, propose new blocks, and ensure the integrity of the system. In Orbinum, the selection of these validators is based on the amount of tokens staked by participants, where nominators delegate their tokens to trusted validators. This delegation system ensures that only reliable and well-supported validators are responsible for securing the core blockchain operations.
+
+When a participant nominates a validator by staking tokens, they enter into a trust agreement where the validator is expected to act honestly. Validators who perform their duties correctly receive rewards, which are distributed among their nominators. However, if a validator acts maliciously or fails to properly validate transactions, they can be penalized through a **slashing mechanism**. This means that a portion of their staked funds will be burned or confiscated, discouraging dishonest behavior.
+
+**NPoS** also plays a significant role in **governance**. Validators, nominators, and contributors have voting power within the **Decentralized Autonomous Organization (DAO)**, which oversees protocol updates, network policies, and economic adjustments. This ensures that network participants have a direct influence on its evolution.
+
+<div align="center">
+  <img src="/img/npos.png" alt="Nominated Proof of Stake" width="500" />
+  <p><em>Nominated Proof of Stake</em></p>
+</div>
+
+### **2. Proof of Contribution (PoC) – Merit-Based Rewards**
+
+While **NPoS** ensures the network’s security and governance, **PoC** incentivizes valuable contributions to Orbinum’s decentralized AI ecosystem. Contributions can take multiple forms, including computational power, high-quality datasets, and AI model contributions. The primary goal of **PoC** is to create a fair and efficient system where rewards are proportional to actual contributions to the AI ecosystem.
+
+For instance, a participant contributing GPU computational power to an AI training process is rewarded based on the computational work done. However, to prevent centralization, mechanisms like **logarithmic scaling** are applied, ensuring that a single entity cannot dominate the network by contributing excessive power.
+
+Similarly, contributors who provide high-quality AI datasets are rewarded based on the uniqueness and relevance of the data. The system performs **data authenticity checks** to prevent duplicate or low-value submissions. Contributors who contribute valuable AI models are also incentivized.
+
+The **PoC** mechanism includes reward mechanisms designed to incentivize valuable contributions. These mechanisms aim to balance rewarding high-quality contributions with preventing centralization and encouraging continuous participation.
+
+<div align="center">
+  <img src="/img/poc.png" alt="Proof of Contribution" width="700" />
+  <p><em>Proof of Contribution</em></p>
+</div>
+
+### **Contribution Evaluation & Reward Distribution**
+
+To maintain fairness and incentivize valuable contributions, Orbinum's **Proof of Contribution (PoC)** mechanism employs several structured reward mechanisms:
+
+* **Weighted Contribution System:** The reward system is designed to dynamically adjust rewards based on the network's needs and demands. This means that different types of contributions, such as computational power, data provision, and AI model contributions, are assigned weights that reflect their current importance to the network. These weights can be adjusted to ensure the network prioritizes the most critical contributions at any given time.
+* **Logarithmic Scaling:** To prevent a single contributor or contribution type from dominating the reward distribution and to foster a balanced ecosystem, Orbinum uses mechanisms like **logarithmic scaling**. This ensures that as a contributor provides more of a specific resource, the rewards for each additional unit of that contribution decrease, discouraging centralization and promoting broader participation.
+* **Tiered Reward System:** The **PoC** mechanism also incorporates reward systems that prioritize the quality and impact of contributions over sheer quantity. This means that contributions that offer greater value to the network receive proportionally larger rewards.
+* **Time-Based Considerations:** Mechanisms like **time-based decay** may be applied to certain types of contributions to encourage continuous participation and the provision of fresh resources. This reduces the rewards for contributions over time, incentivizing contributors to submit new, relevant data and resources.
+* **Minimum Contribution Thresholds:** To ensure that only meaningful contributions are rewarded and to prevent the dilution of rewards through insignificant contributions, Orbinum may establish **minimum contribution thresholds**. This means that contributions below a certain level of quality or quantity may not be eligible for rewards.
+
+### **Evaluated Contributions Types**
+
+| Contribution Type      | Description & Measurement Criteria                                                                                                                                                                                             |
+| :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Computational Power** | Contributions of GPU/CPU power for AI model training and execution.                                                                                                                                                           |
+| **Data Contribution** | Submission of AI training datasets. Evaluated based on **quality** and **relevance**.                                                                                                                                       |
+| **AI Model Contribution** | Contribution of AI models to the ecosystem. Evaluated based on **performance** and **utility**.                                                                                                                               |
+
+---
+
+## **Security & Fraud Prevention**
+
+To maintain the integrity of the Orbinum network and ensure trust in the contributions made to the ecosystem, Orbinum enforces **PoC validation measures**:
+
+* **Verification Mechanisms:** Contributions to the Orbinum network are subject to **verification mechanisms** to ensure their integrity. These mechanisms may include cryptographic proofs, data authenticity checks, and AI model evaluations.
+* **Data Authenticity Checks:** AI datasets submitted to the network undergo **authenticity checks** to prevent the submission of fake, redundant, or low-quality data.
+* **AI Model Evaluation:** AI models are subject to **evaluation** to validate their performance and utility.
