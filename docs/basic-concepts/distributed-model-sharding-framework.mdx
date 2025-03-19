@@ -129,19 +129,19 @@ When a model needs to be executed:
 
 To maintain the integrity of AI models while ensuring privacy, Orbinum implements the following security measures:  
 
-- Zero-Knowledge Proofs (ZKP) → Allow model verification without revealing training data or updates. Ensure that contributions are valid while preserving privacy.  
-- Homomorphic Encryption → Enables AI computations to occur directly on encrypted data, ensuring privacy at all stages of training and execution.  
-- Differential Privacy → Introduces mathematical noise into model updates to prevent identity tracing or dataset reconstruction attacks.  
-- Model Integrity Validation → Each model update is validated before being stored to prevent low-quality or biased updates. Any invalid or tampered updates are automatically rejected or require revalidation.  
+- **Zero-Knowledge Proofs (ZKP)** → Allow model verification without revealing training data or updates. Ensure that contributions are valid while preserving privacy.  
+- **Homomorphic Encryption** → Enables AI computations to occur directly on encrypted data, ensuring privacy at all stages of training and execution.  
+- **Differential Privacy** → Introduces mathematical noise into model updates to prevent identity tracing or dataset reconstruction attacks.  
+- **Model Integrity Validation** → Each model update is validated before being stored to prevent low-quality or biased updates. Any invalid or tampered updates are automatically rejected or require revalidation.  
 
 ---
 
 ## Fault-Tolerant & Decentralized Model Management
 DMS integrates redundancy and fault-tolerance mechanisms to ensure AI model availability:
 
-- Automatic Failover → If a validator node goes offline, another node takes over shard verification and execution.
-- Reallocation of Computation Tasks → Failed AI executions trigger automatic reassignment of tasks.
-- Slashing Mechanisms → Nodes that repeatedly fail or attempt to tamper with stored models face penalties and removal.
+- **Automatic Failover** → If a validator node goes offline, another node takes over shard verification and execution.
+- **Reallocation of Computation Tasks** → Failed AI executions trigger automatic reassignment of tasks.
+- **Slashing Mechanisms** → Nodes that repeatedly fail or attempt to tamper with stored models face penalties and removal.
 
 *These safeguards guarantee that AI models remain accessible, verifiable, and resistant to failures.*
 
@@ -149,7 +149,7 @@ DMS integrates redundancy and fault-tolerance mechanisms to ensure AI model avai
 
 ## **Why Orbinum’s Federated Learning is Unique**  
 
-- No centralized AI model → Each model remains fragmented and decentralized.  
-- Stronger security → Cryptographic validation ensures integrity of model updates.  
-- Optimized AI execution → Sharded models allow scalable and parallel computing.  
-- Fully private AI training → Raw data never leaves the owner’s node.  
+- **No centralized AI model** → Each model remains fragmented and decentralized.  
+- **Stronger security** → Cryptographic validation ensures integrity of model updates.  
+- **Optimized AI execution** → Sharded models allow scalable and parallel computing.  
+- **Fully private AI training** → Raw data never leaves the owner’s node.  
